@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: teal;
+  }
+  
+  
+  .dark-mode{
+    background-color: black !important;
+    color: white !important;
+  }
+  .container {
+    width: 500px;
+    margin: 20px auto;
+  }
+  .form {
+    background-color:wheat;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+  }
+  .input:focus {
+    outline: none;
+  }
+  .add {
+    border: none;
+   background-color:teal;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .tasks {
+    
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 20px;
+  }
+  .tasks .task {
+    color: black;
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  .tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .tasks .task:hover {
+    background-color: #f7f7f7;
+    color:black ;
+  }
+  .tasks .task.done {
+    opacity: 0.5;
+  }
+  .tasks .task span {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .tasks .task button{
+    border: none;
+    background-color: inherit;
+  }
+  .button{
+    text-align: center;
+
+    
+  }
+  .button button{
+    border: none;
+    background-color:wheat ;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+  
+  .digitalClock{
+    margin-top: 20px!important ;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    background-color: wheat;
+    width: 23%;
+    font-size: 30px;
+    
+  }
+  .analogueClock{
+    margin: auto;
+    margin-top: 25px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background: white url(../images/clock.png);
+    background-size: cover;
+    border: 6px double wheat;
+    border-radius: 50%;
+   
+  }
+  .analogueClock::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  .hours{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+  }
+  .hours::before{
+    content: "";
+    width: 8px;
+    height: 80px;
+    z-index: 10;
+    background-color: teal;
+    border-radius: 6px 6px 0 0 ;
+  }
+  .minutes{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 190px;
+    height: 190px;
+  }
+  .minutes::before{
+    content: "";
+    width: 4px;
+    height: 90px;
+    z-index: 11;
+    background-color: rgb(209, 21, 21);
+    border-radius: 4px 4px 0 0 ;
+  }
+  .seconds{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 190px;
+    height: 190px;
+  }
+  .seconds::before{
+    content: "";
+    width: 2px;
+    height: 150px;
+    z-index: 12;
+    background-color: black;
+    border-radius: 2px 2px 0 0 ;
+  }
+  .modeDiv{
+    margin: 30px;
+    text-align: center;
+  }
+  .modeDiv button{
+    border: none;
+    background-color:wheat ;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+  .color-switcher{
+    margin-top: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+   border-radius: 4px;
+    background-color: wheat;
+    width: 22%;
+    margin: auto;
+  
+  }
+.color-switcher li {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.color-switcher li:nth-child(2){
+  background-color: red;
+  border-radius: 4px;
+
+}
+.color-switcher li:nth-child(3){
+  background-color: green;
+  border-radius: 4px;
+}
+.color-switcher li:nth-child(4){
+  background-color: blue;
+  border-radius: 4px;
+}
+.color-switcher li:nth-child(5){
+  background-color: yellow;
+  border-radius: 4px;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+}
+.defult{
+  background-color: teal;
+}
+.color-switcher li:nth-child(6) {
+  background-color: teal;
+  border-radius: 4px;
+  
+ 
+
+}
+.timer{
+  text-align: center;
+  width: 22%;
+  margin: auto;
+  margin-top: 20px!important;
+}
+.timer h3{
+  padding: 15px 0;
+}
